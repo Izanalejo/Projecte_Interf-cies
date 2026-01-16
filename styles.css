@@ -1,0 +1,27 @@
+.cabecera {
+    background-image: url("https://arquitecte.oceanwp.org/wp-content/uploads/2023/04/discussing-blueprint-scaled-1.jpg");
+    background-position: center center;
+    background-size: cover;
+    position: relative; 
+    height: 100vh;
+    /* margin-top: -60px; */
+}
+
+.cabecera::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: linear-gradient(180deg, #00215B 0%, #D2153D 100%);
+    opacity: 0.7;
+    transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+    
+}
+.divLogo{
+       
+        background-repeat: no-repeat;
+        background-size: cover; 
+        height: 50px;
+}
+.menu{
+    background-color: transparent;
+}

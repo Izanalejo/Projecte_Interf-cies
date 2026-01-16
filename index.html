@@ -4,109 +4,154 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conversió de mockup a html amb bootstrap</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">k
 </head>
+
 <body>
-    <div>
-        <div class="row">
-            <div class="col-4 col-sm-4 col-xl-4 bg-info">
-                LOGO
-            </div>
-            <div class="col-sm-none col-lg-8 col-xl-8 d-none  d-sm-none d-xl-block bg-secondary">
-                <div class="row">
-                    <div class="col-2">
-                        opcion
-                    </div>
-                    <div class="col-2">
-                        opcion
-                    </div>
-                    <div class="col-2">
-                        opcion
-                    </div>
-                    <div class="col-2">
-                        opcion
-                    </div>
-                    <div class="col-2">
-                        opcion
-                    </div>
-                    <div class="col-2">
-                        opcion
+
+<div class="container-fluid">
+
+    <!-- ================= NAVBAR ================= -->
+    <div class="row">
+        <div class="col-12">
+            <nav class="navbar navbar-expand-lg bg-transparent">
+                <div class="container-fluid">
+                    <a class="navbar-brand divLogo" href="#">
+                        <img src="img/logo.png" alt="logo">
+                    </a>
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavAltMarkup">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav ms-auto">
+                            <a class="nav-link active" href="#">Home</a>
+                            <a class="nav-link active" href="#">About us</a>
+                            <a class="nav-link active" href="#">Our services</a>
+                            <a class="nav-link active" href="#">Portfolio</a>
+                            <a class="nav-link active" href="#">Blog</a>
+                            <a class="nav-link active" href="#">Contact us</a>
+                            <a class="nav-link active" href="#">
+                                <img src="img/lupa.png" alt="buscar">
+                            </a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-8 col-sm-8 col-lg-none d-sm-block d-md-block d-lg-block d-xl-none    ">
-                MENU
-            </div>
+            </nav>
         </div>
-        <div class="row">
-            <div style="height:25rem;" class="col-sm-12 col-lg-12 col-xl-12 bg-primary">
-                Primera pagina
-            </div>
-            <div class="col-sm-12 col-lg-12 col-xl-12 bg-secondary">
-                <div class="row">
-                    <div class="col-sm-12 col-lg-12 col-xl-6 bg-danger">
-                        Who we are .....................
-                    </div>
-                    <div class="col-sm-12 col-lg-12 col-xl-6 bg-secondary">
-                        <div style="height: 15rem;" class="row">
-                            <div class="col-lg-12 col-xl-12 bg-warning" >
-                                foto
-                            </div>
-                            <div class="col-sm-12 col-lg-6 col-xl-6 bg-success">
-                                foto
-                            </div>
-                            <div class="col-sm-12 col-lg-6 col-xl-6 bg-primary">
-                                foto
-                            </div>
-                        </div>
-                    </div>
+    </div>
+
+    <!-- ================= CABECERA ================= -->
+    <div class="row">
+        <div class="col-12 cabecera">
+            <div class="row">
+                <div class="col-6 col-sm-6 col-lg-12">
+                    From The Concept Of Architecture To A Better Living
                 </div>
-            </div>
-            <div class="col-sm-12 col-lg-12 col-xl-12 bg-warning">
-                <div class="row">
-                    
-                    <div class="col-sm-12 col-lg-12 col-xl-6 order-1 order-sm-1 order-lg-1 order-xl-0 bg-secondary">
-                        <div style="height: 15rem;" class="row">
-                            <div class="col-lg-12 col-xl-12 bg-warning" >
-                                foto
-                            </div>
-                            <div class="col-sm-12 col-lg-6 col-xl-6 bg-success">
-                                foto
-                            </div>
-                            <div class="col-sm-12 col-lg-6 col-xl-6 bg-primary">
-                                foto
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-12 col-lg-12 col-xl-6 order-0 order-sm-0 order-lg-0 order-xl-1 bg-danger">
-                        What we can do .....................
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-12 col-lg-12 col-xl-12 bg-success">
-                <div class="row">
-                    <div class="col-12 bg-info">
-                        We Are specialized in
-                    </div>
-                    <div class="col-sm-12 col-lg-2 bg-primary">
-                        icono
-                    </div>
-                    <div class="col-sm-12 col-lg-2 bg-danger">
-                        icono
-                    </div>
-                    <div class="col-sm-12 col-lg-2 bg-secondary">
-                        icono
-                    </div>
-                    <div class="col-sm-12 col-lg-2 bg-success">
-                        icono
-                    </div>
-                    <div class="col-sm-12 col-lg-2 bg-warning">
-                        icono
-                    </div>
+                <div class="col-6 col-sm-6 col-lg-12">
+                    Hola
                 </div>
             </div>
         </div>
     </div>
+
+    <!-- ================= WHO WE ARE ================= -->
+    <div class="row bg-secondary">
+        <div class="col-12">
+            <div class="row">
+
+                <!-- TEXTO -->
+                <div class="col-sm-12 col-lg-12 col-xl-6 bg-danger">
+                    Who we are .....................
+                </div>
+
+                <!-- FOTOS -->
+                <div class="col-sm-12 col-lg-12 col-xl-6 bg-secondary">
+                    <div class="row">
+
+                        <!-- FOTO GRANDE ARRIBA -->
+                        <div class="col-lg-12 col-xl-12 bg-warning">
+                            foto
+                        </div>
+
+                        <!-- FOTO ABAJO IZQUIERDA -->
+                        <div class="col-sm-12 col-lg-6 col-xl-6 bg-success">
+                            foto
+                        </div>
+
+                        <!-- FOTO ABAJO DERECHA -->
+                        <div class="col-sm-12 col-lg-6 col-xl-6 bg-primary">
+                            foto
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- ================= WHAT WE CAN DO ================= -->
+    <div class="row bg-warning">
+        <div class="col-12">
+            <div class="row">
+
+                <!-- FOTOS -->
+                <div class="col-sm-12 col-lg-12 col-xl-6 order-1 order-xl-0 bg-secondary">
+                    <div class="row">
+
+                        <!-- FOTO GRANDE ARRIBA -->
+                        <div class="col-lg-12 col-xl-12 bg-warning">
+                            foto
+                        </div>
+
+                        <!-- FOTO ABAJO IZQUIERDA -->
+                        <div class="col-sm-12 col-lg-6 col-xl-6 bg-success">
+                            foto
+                        </div>
+
+                        <!-- FOTO ABAJO DERECHA -->
+                        <div class="col-sm-12 col-lg-6 col-xl-6 bg-primary">
+                            foto
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- TEXTO -->
+                <div class="col-sm-12 col-lg-12 col-xl-6 order-0 order-xl-1 bg-danger">
+                    What we can do .....................
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- ================= WE ARE SPECIALIZED IN ================= -->
+    <div class="row">
+        <div class="col-12">
+            <div class="row">
+
+                <div class="col-12 bg-info">
+                    We Are specialized in
+                </div>
+
+                <div class="col-sm-12 col-lg-2 bg-primary">icono</div>
+                <div class="col-sm-12 col-lg-2 bg-danger">icono</div>
+                <div class="col-sm-12 col-lg-2 bg-secondary">icono</div>
+                <div class="col-sm-12 col-lg-2 bg-success">icono</div>
+                <div class="col-sm-12 col-lg-2 bg-warning">icono</div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
