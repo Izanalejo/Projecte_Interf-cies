@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,195 +8,165 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
-<div class="container-fluid p-0">
-    <!-- Navbar usando clases de Bootstrap -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent py-2">
-        <div class="container-fluid px-4">
-            <a class="navbar-brand d-flex align-items-center fw-bold" href="#">
-                <img src="img/logo.png" alt="logo" class="me-2" onerror="this.style.display='none'">
-            </a>
+    <!-- ================= NAVBAR + HERO ================= -->
+    <div class="container-fluid p-0">
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-transparent py-2">
+            <div class="container-fluid px-4">
+                <a class="navbar-brand fw-bold" href="#">
+                    <img src="img/logo.png" alt="logo" onerror="this.style.display='none'">
+                </a>
 
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto align-items-center">
-                    <li class="nav-item"><a class="nav-link fw-semibold px-2" href="#">HOME</a></li>
-                    <li class="nav-item"><a class="nav-link fw-semibold px-2" href="#">ABOUT US</a></li>
-                    <li class="nav-item"><a class="nav-link fw-semibold px-2" href="#">OUR SERVICES</a></li>
-                    <li class="nav-item"><a class="nav-link fw-semibold px-2" href="#">PORTFOLIO</a></li>
-                    <li class="nav-item"><a class="nav-link fw-semibold px-2" href="#">BLOG</a></li>
-                    <li class="nav-item"><a class="nav-link fw-semibold px-2" href="#">CONTACT US</a></li>
-                    <li class="nav-item">
-                        <a class="nav-link px-2" href="#">
-                            <img src="img/lupa.png" alt="buscar" onerror="this.innerHTML='🔍'">
-                        </a>
-                    </li>
-                </ul>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto align-items-center">
+                        <li><a class="nav-link" href="#">HOME</a></li>
+                        <li><a class="nav-link" href="#">ABOUT US</a></li>
+                        <li><a class="nav-link" href="#">OUR SERVICES</a></li>
+                        <li><a class="nav-link" href="#">PORTFOLIO</a></li>
+                        <li><a class="nav-link" href="#">BLOG</a></li>
+                        <li><a class="nav-link" href="#">CONTACT US</a></li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
 
-    <!-- Cabecera Hero -->
-    <div class="cabecera d-flex align-items-center" style="padding: 70px;">
-        <div class="container-fluid px-4 cabecera-content py-4">
-            <div class="row">
-                <!-- Columna izquierda: Texto y botón -->
-                <div class="col-lg-7 text-white">
-                    <div class="py-4">
-                        <h1 class="display-2 fw-bold mb-3 lh-sm">From The Concept Of Architecture To A Better Living.</h1>
-                        <p class="fs-5 mb-3 lh-lg" style="max-width: 600px;">
-                            Architecture has evolved from just providing shelter to a powerful tool that affects our well-being by incorporating natural elements, open spaces, connectivity, and sustainability. Biophilic design enhances well-being. Architects design buildings to foster social interaction and community engagement.
+        <!-- HERO -->
+        <div class="cabecera d-flex align-items-center">
+            <div class="container-fluid cabecera-content py-4 mt-4">
+                <div class="row">
+
+                    <div class="col-lg-7 text-white" style="padding:80px;">
+                        <h1 class="display-2 fw-bold">
+                            From The Concept Of Architecture To A Better Living.
+                        </h1>
+                        <p class="fs-5" style="max-width:600px;">
+                            Architecture has evolved from just providing shelter to a powerful tool that affects our
+                            well-being.
                         </p>
-                        <button class="btn btn-lg text-white fw-bold text-uppercase px-4 py-3 rounded-0" style="background-color: #00215B;">
+                        <button class="btn btn-lg text-white" style="background:#00215B;">
                             OUR SERVICES
                         </button>
                     </div>
-                </div>
 
-                <!-- Columna derecha: Stats Box -->
-                <div class="col-lg-5">
-                    <div class="stats-box p-3 mt-4">
-                        <div class="row g-3">
-                            <!-- Stat 1: Projects -->
-                            <div class="col-md-4 col-12">
-                                <div class="text-center text-white p-2">
-                                    <div class="display-5 fw-bold mb-1">11,100+</div>
-                                    <div class="fw-bold text-uppercase">PROJECTS</div>
+                    <div class="col-lg-5 p-0">
+                        <div class="stats-box mt-5 p-3">
+                            <div class="row text-center text-white">
+                                <div class="col-4">
+                                    <div class="display-6 fw-bold">11,100+</div>
+                                    PROJECTS
                                 </div>
-                            </div>
-
-                            <!-- Stat 2: Quality -->
-                            <div class="col-md-4 col-12">
-                                <div class="text-center text-white p-2">
-                                    <div class="display-5 fw-bold mb-1">100%</div>
-                                    <div class="fw-bold text-uppercase">QUALITY</div>
+                                <div class="col-4">
+                                    <div class="display-6 fw-bold">100%</div>
+                                    QUALITY
                                 </div>
-                            </div>
-
-                            <!-- Stat 3: Services -->
-                            <div class="col-md-4 col-12">
-                                <div class="text-center text-white p-2">
-                                    <div class="display-5 fw-bold mb-1">24/7</div>
-                                    <div class="fw-bold text-uppercase">SERVICES</div>
+                                <div class="col-4">
+                                    <div class="display-6 fw-bold">24/7</div>
+                                    SERVICES
                                 </div>
                             </div>
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>
+
     </div>
-</div>
+
     <!-- ================= WHO WE ARE ================= -->
-    <div class="row bg-secondary">
-        <div class="col-12">
-            <div class="row">
+    <div class="container pagina2 my-5">
+        <div class="row">
 
-                <!-- TEXTO -->
-                <div class="col-sm-12 col-lg-12 col-xl-6 bg-danger">
-                    Who we are .....................
-                </div>
+            <div class="col-xl-6">
+                <h1>Who we are</h1>
+                <p>
+                    Hi! Welcome to the Arquitecte full website template by OceanWP.
+                    <br><br>
+                    This homepage was built with Elementor, so you can completely use it to quick launch your website
+                    and avoid struggling with the design or inspiration.
+                    <br><br>
+                    Likewise, you can alter this text, images, color combo or just about anything that comes to your
+                    mind! We’re here to help you get started fast
+                    – the rest is up to you and that’s a beauty of so many opportunity and choices
+                </p>
+            </div>
 
-                <!-- FOTOS -->
-                <div class="col-sm-12 col-lg-12 col-xl-6 bg-secondary">
-                    <div class="row">
-
-                        <!-- FOTO GRANDE ARRIBA -->
-                        <div class="col-lg-12 col-xl-12 bg-warning">
-                            foto
-                        </div>
-
-                        <!-- FOTO ABAJO IZQUIERDA -->
-                        <div class="col-sm-12 col-lg-6 col-xl-6 bg-success">
-                            foto
-                        </div>
-
-                        <!-- FOTO ABAJO DERECHA -->
-                        <div class="col-sm-12 col-lg-6 col-xl-6 bg-primary">
-                            foto
-                        </div>
-
+            <div class="col-xl-6">
+                <div class="row">
+                    <div class="col-12">
+                        <img class="foto2" src="img/foto2.jpg" alt="">
+                    </div>
+                    <div class="col-6 mt-4">
+                        <img class="foto3" src="img/foto3.jpg" alt="">
+                    </div>
+                    <div class="col-6 mt-4">
+                        <img class="foto4" src="img/foto4.jpg" alt="">
                     </div>
                 </div>
-
             </div>
+
         </div>
     </div>
 
     <!-- ================= WHAT WE CAN DO ================= -->
-    <div class="row bg-warning">
-        <div class="col-12">
-            <div class="row">
-
-                <!-- FOTOS -->
-                <div class="col-sm-12 col-lg-12 col-xl-6 order-1 order-xl-0 bg-secondary">
-                    <div class="row">
-
-                        <!-- FOTO GRANDE ARRIBA -->
-                        <div class="col-lg-12 col-xl-12 bg-warning">
-                            foto
-                        </div>
-
-                        <!-- FOTO ABAJO IZQUIERDA -->
-                        <div class="col-sm-12 col-lg-6 col-xl-6 bg-success">
-                            foto
-                        </div>
-
-                        <!-- FOTO ABAJO DERECHA -->
-                        <div class="col-sm-12 col-lg-6 col-xl-6 bg-primary">
-                            foto
-                        </div>
-
+    <div class="container pagina3 my-5">
+        <div class="row">
+            <div class="col-xl-6 order-1 order-xl-0">
+                <div class="row">
+                    <div class="col-12">
+                        <img class="foto5" src="img/foto5.jpg" alt="">
+                    </div>
+                    <div class="col-6 mt-4">
+                        <img class="foto6" src="img/foto6.jpg" alt="">
+                    </div>
+                    <div class="col-6 mt-4">
+                        <img class="foto7" src="img/foto7.jpg" alt="">
                     </div>
                 </div>
-
-                <!-- TEXTO -->
-                <div class="col-sm-12 col-lg-12 col-xl-6 order-0 order-xl-1 bg-danger">
-                    What we can do .....................
-                </div>
-
+            </div>
+            <div class="col-xl-6 order-0 order-xl-1">
+                <h1>What we can do</h1>
+                <p>
+                    This section is the perfect opportunity to showcase the development of your exceptional service
+                    approach and its positive impact on your clients. Share how your approach sets you apart from the
+                    rest and how your clients have benefited from it.
+                    <br><br>
+                    Make sure the description inspires people to take action by evoking confidence and trust and
+                    reassure them briefly they can be and feel safe with you just as much your website and functionality
+                    can be safe with OceanWP.
+                </p>
             </div>
         </div>
     </div>
 
     <!-- ================= WE ARE SPECIALIZED IN ================= -->
-    <div class="row">
-        <div class="col-12">
-            <div class="row">
-
-                <div class="col-12 bg-info">
-                    We Are specialized in
-                </div>
-
-                <div class="col-sm-12 col-lg-2 bg-primary">icono</div>
-                <div class="col-sm-12 col-lg-2 bg-danger">icono</div>
-                <div class="col-sm-12 col-lg-2 bg-secondary">icono</div>
-                <div class="col-sm-12 col-lg-2 bg-success">icono</div>
-                <div class="col-sm-12 col-lg-2 bg-warning">icono</div>
-
+    <div class="container my-5">
+        <div class="row text-center">
+            <div class="col-12 bg-info mb-4">
+                We are specialized in
             </div>
+            <div class="col-sm-12 col-lg-2 bg-primary">icono</div>
+            <div class="col-sm-12 col-lg-2 bg-danger">icono</div>
+            <div class="col-sm-12 col-lg-2 bg-secondary">icono</div>
+            <div class="col-sm-12 col-lg-2 bg-success">icono</div>
+            <div class="col-sm-12 col-lg-2 bg-warning">icono</div>
         </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        window.addEventListener('scroll', () => {
+            document.querySelector('.navbar')
+                .classList.toggle('scrolled', window.scrollY > 50);
+        });
+    </script>
 
-</div>
-
-
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-<script>
-    window.addEventListener('scroll', function() {
-        const navbar = document.querySelector('.navbar');
-        if (window.scrollY > 50) {
-            navbar.classList.add('scrolled');
-        } else {
-            navbar.classList.remove('scrolled');
-        }
-    });
-</script>
-</script>
 </body>
+
 </html>
