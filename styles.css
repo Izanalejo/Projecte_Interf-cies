@@ -1,23 +1,18 @@
 .navbar {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
     z-index: 1000;
     transition: background-color 0.3s ease;
     font-size: 20px;
+    background-color: rgb(0, 33, 91);
 }
 
 .navbar.scrolled {
-    background-color: rgba(0, 33, 91, 0.95) !important;
+    background-color: rgb(0, 33, 91) !important;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 }
-
-.navbar-nav .nav-link {
-    color: white !important;
-}
-
-
 
 .cabecera {
     background-image: url("https://arquitecte.oceanwp.org/wp-content/uploads/2023/04/discussing-blueprint-scaled-1.jpg");
