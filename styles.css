@@ -1,3 +1,4 @@
+/* Solo estilos que no se pueden hacer con Bootstrap */
 .navbar {
     position: fixed;
     top: 0;
@@ -39,58 +40,45 @@
     background-color: rgba(0, 33, 91, 0.95);
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
+    height: 15rem;
 }
-.pagina2{
-    height: 100vh;
-    padding: 20px;
+
+#logo {
+    height: 80px;           /* tamaño inicial */
+    transition: height 0.3s ease;
 }
-.pagina3{
-    height: 100vh;
-    padding: 20px;
-}
-.foto2{
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-}
-.foto3{
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-}
-.foto4{
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-}
-.foto5{
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-}
-.foto6{
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-}
-.foto7{
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-}
-.pagina2 .foto2,
-.pagina2 .foto3,
-.pagina2 .foto4 {
+
+
+@media (max-width: 100vh) {
+
+  /* Fondo blanco del menú desplegado */
+  .navbar-collapse {
+    background-color: #ffffff;
     width: 100%;
-    height: auto;
-    object-fit: cover;
-    display: block;
+    padding: 1rem 1.5rem;
+    font-family:'Roboto', sans-serif;;
+  }
+
+  /* Links en negro */
+  .navbar-collapse .nav-link {
+    color: #333 !important;
+    padding: 12px 0;
+    border-bottom: 1px solid #f1f1f1;
+  }
+
+  /* Iconos */
+  .navbar-collapse i {
+    color: #333 !important;
+  }
+
+  /* Quita márgenes raros */
+  .navbar-collapse ul {
+    align-items: flex-start !important;
+  }
 }
-.pagina3 .foto5,
-.pagina3 .foto6,
-.pagina3 .foto7 {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    display: block;
-}
 
-
-
-.texto{
-    padding: 90px;
+@media (min-width: 992px) {
+  #navbarNav {
+    margin-right: 350px;
+  }
 }
