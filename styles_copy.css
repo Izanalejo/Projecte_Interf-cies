@@ -12,11 +12,35 @@
 
 /* Links del navbar */
 .navbar-nav .nav-link {
-    font-size: 1.3rem;
-    padding-left: 1.5rem !important;
-    padding-right: 1.5rem !important;
-    letter-spacing: 0.1px;
+    font-size: 20px;
+    letter-spacing: 0.08em;
     font-family: 'Montserrat', sans-serif;
+    position: relative;
+    padding-bottom: 8px;
+}
+
+/* Efecto de barra inferior con transición */
+.navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: #ff0000;
+    transform: scaleY(0);
+    transform-origin: bottom;
+    transition: transform 0.3s ease;
+}
+
+/* Mostrar la barra al pasar el ratón */
+.navbar-nav .nav-link:hover::after {
+    transform: scaleY(1);
+}
+
+/* Excluir el icono de búsqueda del efecto */
+.navbar-nav .nav-link:has(.fa-search)::after {
+    display: none;
 }
 .cabecera {
     background-image: url("https://arquitecte.oceanwp.org/wp-content/uploads/2023/04/discussing-blueprint-scaled-1.jpg");
@@ -45,8 +69,47 @@
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     height: 16rem;
-    width: 42rem;
+
+    width: 100%;
+    max-width: 49rem;
 }
+
+@media (max-width: 991px) {
+    .stats-box {
+        max-width: 100%;
+        border-radius: 0;  
+    }
+}
+
+
+#logo {
+    height: 70px;                 
+    transition: all 0.5s ease;    
+}
+
+.navbar.transparent-header.shrink #logo {
+    height: 45px;                 
+}
+
+
+
+.hover-img {
+    transition: transform 1.5s ease, filter 1.5s ease;
+}
+
+.hover-img:hover {
+    transform: scale(0.9);
+}
+
+.hover-icon {
+    transition: transform 0.5s ease, filter 0.5s ease;
+}
+
+.hover-icon:hover {
+    transform: scale(0.9);
+}
+
+
 
 .navbar-link{
     color: blue;
@@ -54,8 +117,8 @@
 }
 
 .icon-outlined {
-    color: #e63946; /* Rojo para el borde */
-    background-color: #00215b; /* Azul para el fondo */
-    -webkit-text-stroke: 2px #e63946; /* Borde rojo */
-    -webkit-text-fill-color: #00215b; /* Interior azul */
+    color: #e63946; 
+    background-color: #00215b; 
+    -webkit-text-stroke: 2px #e63946; 
+    -webkit-text-fill-color: #00215b; 
 }
