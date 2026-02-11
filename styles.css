@@ -127,10 +127,10 @@ body {
     background-color: #ffffff;
 }
 
-.todo {
+.todo, .bloque3 {
     max-width: 1440px;
     margin: 0 auto;
-    padding: 60px 20px;
+    padding: 100px 20px !important; /* De 60px pasamos a 100px */
 }
 
 .titulo {
@@ -205,12 +205,19 @@ body {
     color: white;
     border-radius: 10px;
     height: 520px;
+    /* ... mantén tu código ... */
+    height: auto; /* Cambia de 520px a auto para que el padding mande */
+    padding: 120px 0; /* Esto le da la distancia exacta de la imagen */
+    margin: 40px 0; /* Separa el bloque oscuro de los bloques blancos adyacentes */
 }
 
-.texto2{
+.texto2 {
     font-family: 'Montserrat', sans-serif;
     color: white;
-
+    max-width: 750px; /* Evita que el texto ocupe todo el ancho */
+    margin: 0 auto 40px auto; /* Centra el bloque de texto y lo separa del botón */
+    line-height: 1.8; /* Mejora la legibilidad como en la original */
+    font-size: 1.1rem;
 }
 
 .bloque3{
@@ -219,9 +226,6 @@ body {
     padding: 60px 20px;
 }
 
-.formulario{
-    background-color: #001d4a;
-}
 
 .contacto-caja{
     background-color: #061738;
@@ -260,10 +264,15 @@ body {
     text-transform: uppercase;
 }
 
-.formulario-bloque{
+.formulario {
+    background-color: #001d4a;
+    padding: 100px 0; /* Añade este padding para separar el inicio del form del bloque anterior */
+}
+
+.formulario-bloque {
     background-color: white;
     border-radius: 10px;
-    min-height: 150px;
+    padding: 40px; /* ¡Fundamental! Esto crea el espacio dentro del cuadro blanco */
 }
 .footer{
     background-color: #d2153d;
