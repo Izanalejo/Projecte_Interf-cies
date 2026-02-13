@@ -223,13 +223,16 @@ body {
 .bloque3{
     max-width: 1440px;
     margin: 0 auto;
-    padding: 60px 20px;
+    padding-top: 100px;
+    /* Aumentamos el espacio inferior para que el formulario "flote" en el vacío */
+    padding-bottom: 200px;
 }
 
 
 .contacto-caja{
     background-color: #061738;
-    max-width: 400px;
+    max-width: 450px;
+    padding: 0px 30px;
 }
 
 .contacto-icono{
@@ -259,20 +262,22 @@ body {
 .contacto-titulo-principal{
     color: white;
     font-weight: bold;
-    margin-top: 15px; /* Ajusta este valor (10px, 20px...) hasta que quede igual */
+    margin-top: 15px; 
     margin-bottom: 25px;
     text-transform: uppercase;
 }
 
 .formulario {
     background-color: #001d4a;
-    padding: 100px 0; /* Añade este padding para separar el inicio del form del bloque anterior */
+    padding-top: 120px; 
+    padding-bottom: 100px;
 }
 
 .formulario-bloque {
     background-color: white;
     border-radius: 10px;
-    padding: 40px; /* ¡Fundamental! Esto crea el espacio dentro del cuadro blanco */
+    padding: 40px; 
+    margin-top: -170px;
 }
 .footer{
     background-color: #d2153d;
