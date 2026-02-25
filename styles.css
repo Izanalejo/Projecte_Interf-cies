@@ -303,24 +303,12 @@ body {
 }
 
 
-/* 2. Efecto Rojo: Solo se activa si el campo es inválido Y el usuario está interactuando con él */
+/* 2. Efecto Rojo: Solo se activa si entras al campo */
 .form-control:focus:invalid {
-    border-color: #d2153d; /* Rojo cuando estás dentro y está mal o vacío */
+    border-color: #d2153d; /* Rojo cuando estás dentro y está vacío */
     box-shadow: 0 0 0 0.2rem rgba(210, 21, 61, 0.1);
 }
 
-.newsletter-footer .btn {
-    border-radius: 2px !important; /* Botón cuadrado */
-    padding: 16px 40px !important;  /* Botón más grande */
-    font-size: 14px !important;     /* Tamaño de letra */
-    font-weight: 800 !important;    /* Letra gruesa */
-    text-transform: uppercase;      /* Siempre en mayúsculas */
-    letter-spacing: 1px;            /* Espaciado entre letras profesional */
-}
-
-.newsletter-footer .form-control::placeholder {
-    color: rgba(255, 255, 255, 0.7);
-}
 
 /* Oscurecer imagen bloque 1 */
 
@@ -365,7 +353,7 @@ body {
     /* 1. Quitamos el margen negativo para que no se suba */
     .formulario-bloque,
     .contact-wrapper-subir {
-        margin-top: 0 !important;
+        margin-top: 0 ;
         margin-bottom: 30px;
     }
 
