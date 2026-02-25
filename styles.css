@@ -61,25 +61,41 @@
 .cabecera-content {
     position: relative;
     z-index: 2;
+    height: 100%;
+    min-height: inherit;
+}
+
+.stats-box-wrapper {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 49rem;
+    max-width: 50%;
 }
 
 .stats-box {
     background-color: rgba(0, 33, 91, 0.95);
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
     height: 16rem;
-
     width: 100%;
-    max-width: 49rem;
 }
 
+/* MÓVIL: vuelve al flujo normal, ancho completo */
 @media (max-width: 991px) {
-    .stats-box {
+    .stats-box-wrapper {
+        position: static;
+        width: 100%;
         max-width: 100%;
-        border-radius: 0;  
+        margin-top: 2rem;
+    }
+
+    .stats-box {
+        border-radius: 0;
     }
 }
-
 
 #logo {
     height: 70px;                 
